@@ -28,7 +28,8 @@ for event in dev.read_loop():
                 keyboard.press_and_release('up')
                 keyboard.press_and_release('enter')
             elif key.keycode == 'KEY_SPACE':
-                keyboard.press_and_release('up')
+                keyboard.press_and_release('ctrl+x')
+                keyboard.press_and_release('y')
                 keyboard.press_and_release('enter')
             elif key.keycode == 'KEY_Z':
                 keyboard.press_and_release('ctrl+plus')
@@ -56,12 +57,9 @@ for event in dev.read_loop():
                 keyboard.press_and_release('escape')
             elif key.keycode == 'KEY_TAB':
                 keyboard.press_and_release('ctrl+z')
-            elif key.keycode == 'KEY_LEFTMETA':
-                keyboard.press_and_release('ctrl+f')
             elif key.keycode == 'KEY_102ND':
-                keyboard.press_and_release('ctrl+x')
-                keyboard.press_and_release('y')
-                keyboard.press_and_release('enter')
+                keyboard.press_and_release('ctrl+f')
+
 
 
 
