@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # $evtest # to find where is the keyboard
-EV_NUMBER=6
+EV_NUMBER=3
 source env/bin/activate
-sudo python3 main.py $EV_NUMBER
+PYTHON3_VENV_PATH=$(which python3)
+sudo $PYTHON3_VENV_PATH main.py $EV_NUMBER
