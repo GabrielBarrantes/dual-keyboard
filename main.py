@@ -59,6 +59,10 @@ for event in dev.read_loop():
                 keyboard.press_and_release('ctrl+z')
             elif key.keycode == 'KEY_102ND':
                 keyboard.press_and_release('ctrl+f')
+            elif key.keycode == 'KEY_BACKSPACE':
+                keyboard.write("git push origin ")
+            elif key.keycode == 'KEY_RIGHTCTRL':
+                keyboard.write('--force')
 
 
 
