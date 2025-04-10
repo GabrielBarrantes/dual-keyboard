@@ -31,8 +31,6 @@ for event in dev.read_loop():
                 keyboard.press_and_release('ctrl+x')
                 keyboard.press_and_release('y')
                 keyboard.press_and_release('enter')
-            elif key.keycode == 'KEY_Z':
-                keyboard.press_and_release('ctrl+plus')
             elif key.keycode == 'KEY_A':
                 keyboard.press_and_release('ctrl+minus')
             elif key.keycode == 'KEY_F1':
@@ -63,6 +61,14 @@ for event in dev.read_loop():
                 keyboard.write("git push origin ")
             elif key.keycode == 'KEY_RIGHTCTRL':
                 keyboard.write('--force')
+            elif key.keycode == 'KEY_Z':
+                keyboard.press(125)
+                keyboard.press_and_release('minus')
+                keyboard.release(125)
+            elif key.keycode == 'KEY_LEFTALT':
+                keyboard.press(125)
+                keyboard.press_and_release('equal')
+                keyboard.release(125)
 
 
 
